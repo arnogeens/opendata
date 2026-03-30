@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-03-30T14:16:25+00:00",
+  "snapshotDate": "2026-03-30",
+  "stages": [
+    {
+      "id": "512x256",
+      "day": "./512x256/earth.jpg",
+      "cloudAlpha": "./512x256/clouds-alpha.png",
+      "night": "./512x256/earth-night.jpg",
+      "specular": "./512x256/specular.jpg"
+    },
+    {
+      "id": "1024x512",
+      "day": "./1024x512/earth.jpg",
+      "cloudAlpha": "./1024x512/clouds-alpha.png",
+      "night": "./1024x512/earth-night.jpg",
+      "specular": "./1024x512/specular.jpg"
+    },
+    {
+      "id": "2048x1024",
+      "day": "./2048x1024/earth.jpg",
+      "cloudAlpha": "./2048x1024/clouds-alpha.png",
+      "night": "./2048x1024/earth-night.jpg",
+      "specular": "./2048x1024/specular.jpg"
+    },
+    {
+      "id": "4096x2048",
+      "day": "./4096x2048/earth.jpg",
+      "cloudAlpha": "./4096x2048/clouds-alpha.png",
+      "night": "./4096x2048/earth-night.jpg",
+      "specular": "./4096x2048/specular.jpg"
+    },
+    {
+      "id": "8192x4096",
+      "day": "./8192x4096/earth.jpg",
+      "cloudAlpha": "./8192x4096/clouds-alpha.png",
+      "night": "./8192x4096/earth-night.jpg",
+      "specular": "./8192x4096/specular.jpg"
+    }
+  ]
+}
