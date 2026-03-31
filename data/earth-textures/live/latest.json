@@ -1,41 +1,41 @@
 {
-  "generatedAt": "2026-03-31T07:57:42+00:00",
+  "generatedAt": "2026-03-31T08:03:53+00:00",
   "snapshotDate": "2026-03-31",
   "stages": [
     {
       "id": "512x256",
-      "day": "./512x256/earth.jpg",
-      "cloudAlpha": "./512x256/clouds-alpha.png",
-      "night": "./512x256/earth-night.jpg",
-      "specular": "./512x256/specular.jpg"
+      "day": "./512x256/earth.webp",
+      "cloudAlpha": "./512x256/clouds-alpha.webp",
+      "night": "./512x256/earth-night.webp",
+      "specular": "./512x256/specular.webp"
     },
     {
       "id": "1024x512",
-      "day": "./1024x512/earth.jpg",
-      "cloudAlpha": "./1024x512/clouds-alpha.png",
-      "night": "./1024x512/earth-night.jpg",
-      "specular": "./1024x512/specular.jpg"
+      "day": "./1024x512/earth.webp",
+      "cloudAlpha": "./1024x512/clouds-alpha.webp",
+      "night": "./1024x512/earth-night.webp",
+      "specular": "./1024x512/specular.webp"
     },
     {
       "id": "2048x1024",
-      "day": "./2048x1024/earth.jpg",
-      "cloudAlpha": "./2048x1024/clouds-alpha.png",
-      "night": "./2048x1024/earth-night.jpg",
-      "specular": "./2048x1024/specular.jpg"
+      "day": "./2048x1024/earth.webp",
+      "cloudAlpha": "./2048x1024/clouds-alpha.webp",
+      "night": "./2048x1024/earth-night.webp",
+      "specular": "./2048x1024/specular.webp"
     },
     {
       "id": "4096x2048",
-      "day": "./4096x2048/earth.jpg",
-      "cloudAlpha": "./4096x2048/clouds-alpha.png",
-      "night": "./4096x2048/earth-night.jpg",
-      "specular": "./4096x2048/specular.jpg"
+      "day": "./4096x2048/earth.webp",
+      "cloudAlpha": "./4096x2048/clouds-alpha.webp",
+      "night": "./4096x2048/earth-night.webp",
+      "specular": "./4096x2048/specular.webp"
     },
     {
       "id": "8192x4096",
-      "day": "./8192x4096/earth.jpg",
-      "cloudAlpha": "./8192x4096/clouds-alpha.png",
-      "night": "./8192x4096/earth-night.jpg",
-      "specular": "./8192x4096/specular.jpg"
+      "day": "./8192x4096/earth.webp",
+      "cloudAlpha": "./8192x4096/clouds-alpha.webp",
+      "night": "./8192x4096/earth-night.webp",
+      "specular": "./8192x4096/specular.webp"
     }
   ]
 }
