@@ -1,0 +1,18 @@
+[
+  {
+    "timestamp": "2026-04-11T15:57:51.429005Z",
+    "sep_pfu": 0.182,
+    "kp_index": 2.0,
+    "forbush_pct": 0,
+    "triggered": false,
+    "event_type": null
+  },
+  {
+    "timestamp": "2026-04-11T16:01:40.600905Z",
+    "sep_pfu": 0.182,
+    "kp_index": 2.0,
+    "forbush_pct": 0,
+    "triggered": false,
+    "event_type": null
+  }
+]
