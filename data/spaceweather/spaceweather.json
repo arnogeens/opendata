@@ -1,7 +1,14 @@
 {
-  "timestamp": "2026-04-12T09:24:37.060196Z",
-  "sep_pfu": 0.165,
+  "timestamp": "2026-04-12T09:38:28.018916Z",
+  "sep_pfu": 0.206,
   "kp_index": 2.33,
   "forbush_pct": 0,
-  "seed": 1775985877
+  "history": [
+    {
+      "timestamp": "2026-04-12T09:38:28.018916Z",
+      "sep_pfu": 0.206,
+      "kp_index": 2.33,
+      "forbush_pct": 0
+    }
+  ]
 }
