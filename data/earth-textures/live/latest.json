@@ -1,39 +1,39 @@
 {
-  "generatedAt": "2026-04-01T05:08:13+00:00",
-  "snapshotDate": "2026-04-01",
+  "generatedAt": "2026-04-12T07:44:00+00:00",
+  "snapshotDate": "2026-04-12",
   "stages": [
     {
       "id": "512x256",
       "day": "./512x256/earth.webp",
-      "cloudAlpha": "./512x256/clouds-alpha.webp",
+      "cloudAlpha": "./512x256/clouds.webp",
       "night": "./512x256/earth-night.webp",
       "specular": "./512x256/specular.webp"
     },
     {
       "id": "1024x512",
       "day": "./1024x512/earth.webp",
-      "cloudAlpha": "./1024x512/clouds-alpha.webp",
+      "cloudAlpha": "./1024x512/clouds.webp",
       "night": "./1024x512/earth-night.webp",
       "specular": "./1024x512/specular.webp"
     },
     {
       "id": "2048x1024",
       "day": "./2048x1024/earth.webp",
-      "cloudAlpha": "./2048x1024/clouds-alpha.webp",
+      "cloudAlpha": "./2048x1024/clouds.webp",
       "night": "./2048x1024/earth-night.webp",
       "specular": "./2048x1024/specular.webp"
     },
     {
       "id": "4096x2048",
       "day": "./4096x2048/earth.webp",
-      "cloudAlpha": "./4096x2048/clouds-alpha.webp",
+      "cloudAlpha": "./4096x2048/clouds.webp",
       "night": "./4096x2048/earth-night.webp",
       "specular": "./4096x2048/specular.webp"
     },
     {
       "id": "8192x4096",
       "day": "./8192x4096/earth.webp",
-      "cloudAlpha": "./8192x4096/clouds-alpha.webp",
+      "cloudAlpha": "./8192x4096/clouds.webp",
       "night": "./8192x4096/earth-night.webp",
       "specular": "./8192x4096/specular.webp"
     }
