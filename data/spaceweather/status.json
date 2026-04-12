@@ -44,5 +44,11 @@
     "sep_pfu": 0.16,
     "kp_index": 2.33,
     "forbush_pct": 0
+  },
+  {
+    "timestamp": "2026-04-12T09:24:37.060196Z",
+    "sep_pfu": 0.165,
+    "kp_index": 2.33,
+    "forbush_pct": 0
   }
 ]
