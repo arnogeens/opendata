@@ -8,9 +8,17 @@
     "event_type": null
   },
   {
-    "timestamp": "2026-04-11T16:27:02.796617Z",
-    "sep_pfu": 0.201,
+    "timestamp": "2026-04-11T16:32:32.242751Z",
+    "sep_pfu": 0.186,
     "kp_index": 2.0,
+    "forbush_pct": 0,
+    "triggered": false,
+    "event_type": null
+  },
+  {
+    "timestamp": "2026-04-12T02:44:53.340496Z",
+    "sep_pfu": 0.186,
+    "kp_index": 1.33,
     "forbush_pct": 0,
     "triggered": false,
     "event_type": null
