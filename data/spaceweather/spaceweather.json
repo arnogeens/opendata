@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-04-17T01:26:30.930743Z",
+  "timestamp": "2026-04-17T12:55:13.820763Z",
   "sep_pfu": 0.227,
-  "kp_index": 0.67,
+  "kp_index": 1.0,
   "forbush_pct": 0,
   "history": [
     {
@@ -74,6 +74,12 @@
       "timestamp": "2026-04-17T01:26:30.930743Z",
       "sep_pfu": 0.227,
       "kp_index": 0.67,
+      "forbush_pct": 0
+    },
+    {
+      "timestamp": "2026-04-17T12:55:13.820763Z",
+      "sep_pfu": 0.227,
+      "kp_index": 1.0,
       "forbush_pct": 0
     }
   ]
