@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-04-18T01:20:10.073648Z",
-  "sep_pfu": 0.167,
-  "kp_index": 2.33,
+  "timestamp": "2026-04-18T07:55:54.534230Z",
+  "sep_pfu": 0.179,
+  "kp_index": 5.0,
   "forbush_pct": 0,
   "history": [
     {
@@ -83,10 +83,22 @@
       "forbush_pct": 0
     },
     {
-      "timestamp": "2026-04-18T01:20:10.073648Z",
-      "sep_pfu": 0.167,
-      "kp_index": 2.33,
-      "forbush_pct": 0
+      "date": "2026-04-18",
+      "sep_pfu": {
+        "current": 0.179,
+        "max": 0.189,
+        "min": 0.167
+      },
+      "kp_index": {
+        "current": 5.0,
+        "max": 5.0,
+        "min": 2.33
+      },
+      "forbush_pct": {
+        "current": 0,
+        "max": 0,
+        "min": 0
+      }
     }
   ]
 }
