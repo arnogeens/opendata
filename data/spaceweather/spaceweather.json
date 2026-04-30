@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-04-30T21:05:17.158180Z",
-  "sep_pfu": 0.19,
+  "timestamp": "2026-04-30T22:56:10.201540Z",
+  "sep_pfu": 0.169,
   "kp_index": 4.0,
   "forbush_pct": 0,
-  "sw_speed_kms": 457.3,
-  "sw_pressure_npa": 0.81,
+  "sw_speed_kms": 471.3,
+  "sw_pressure_npa": 1.43,
   "euv_sfu": 143.0,
-  "lyman_alpha_uwcm2": 0.6,
+  "lyman_alpha_uwcm2": 0.8155,
   "history": [
     {
       "timestamp": "2026-04-12T09:38:28.018916Z",
@@ -608,53 +608,53 @@
     {
       "date": "2026-04-30",
       "sep_pfu": {
-        "current": 0.19,
+        "current": 0.169,
         "max": 0.206,
         "min": 0.143,
-        "avg": 0.18,
-        "count": 9
+        "avg": 0.179,
+        "count": 10
       },
       "kp_index": {
         "current": 4.0,
         "max": 4.0,
         "min": 1.33,
-        "avg": 2.26,
-        "count": 9
+        "avg": 2.43,
+        "count": 10
       },
       "forbush_pct": {
         "current": 0,
         "max": 0,
         "min": 0,
         "avg": 0.0,
-        "count": 9
+        "count": 10
       },
       "sw_speed_kms": {
-        "current": 457.3,
-        "max": 457.3,
+        "current": 471.3,
+        "max": 471.3,
         "min": 348.7,
-        "avg": 390.1,
-        "count": 9
+        "avg": 398.2,
+        "count": 10
       },
       "sw_pressure_npa": {
-        "current": 0.81,
+        "current": 1.43,
         "max": 1.62,
         "min": 0.03,
-        "avg": 0.63,
-        "count": 9
+        "avg": 0.71,
+        "count": 10
       },
       "euv_sfu": {
         "current": 143.0,
         "max": 143.0,
         "min": 143.0,
         "avg": 143.0,
-        "count": 9
+        "count": 10
       },
       "lyman_alpha_uwcm2": {
-        "current": 0.6,
+        "current": 0.8155,
         "max": 0.8155,
         "min": 0.6,
-        "avg": 0.7676,
-        "count": 9
+        "avg": 0.7724,
+        "count": 10
       }
     }
   ]
