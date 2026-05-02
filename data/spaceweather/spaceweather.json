@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-05-02T08:22:23.011113Z",
-  "sep_pfu": 0.193,
-  "kp_index": 1.33,
+  "timestamp": "2026-05-02T10:01:04.704118Z",
+  "sep_pfu": 0.169,
+  "kp_index": 1.0,
   "forbush_pct": 0,
-  "sw_speed_kms": 451.9,
-  "sw_pressure_npa": 0.92,
+  "sw_speed_kms": 422.5,
+  "sw_pressure_npa": 0.3,
   "euv_sfu": 145.0,
-  "lyman_alpha_uwcm2": 0.6,
+  "lyman_alpha_uwcm2": 0.8201,
   "history": [
     {
       "timestamp": "2026-04-12T09:38:28.018916Z",
@@ -712,53 +712,53 @@
     {
       "date": "2026-05-02",
       "sep_pfu": {
-        "current": 0.193,
+        "current": 0.169,
         "max": 0.204,
-        "min": 0.193,
-        "avg": 0.197,
-        "count": 3
+        "min": 0.169,
+        "avg": 0.19,
+        "count": 4
       },
       "kp_index": {
-        "current": 1.33,
+        "current": 1.0,
         "max": 2.67,
-        "min": 1.33,
-        "avg": 1.78,
-        "count": 3
+        "min": 1.0,
+        "avg": 1.58,
+        "count": 4
       },
       "forbush_pct": {
         "current": 0,
         "max": 0,
         "min": 0,
         "avg": 0.0,
-        "count": 3
+        "count": 4
       },
       "sw_speed_kms": {
-        "current": 451.9,
+        "current": 422.5,
         "max": 451.9,
-        "min": 440.4,
-        "avg": 445.8,
-        "count": 3
+        "min": 422.5,
+        "avg": 440.0,
+        "count": 4
       },
       "sw_pressure_npa": {
-        "current": 0.92,
+        "current": 0.3,
         "max": 0.92,
-        "min": 0.36,
-        "avg": 0.65,
-        "count": 3
+        "min": 0.3,
+        "avg": 0.56,
+        "count": 4
       },
       "euv_sfu": {
         "current": 145.0,
         "max": 145.0,
         "min": 145.0,
         "avg": 145.0,
-        "count": 3
+        "count": 4
       },
       "lyman_alpha_uwcm2": {
-        "current": 0.6,
+        "current": 0.8201,
         "max": 0.8201,
         "min": 0.6,
-        "avg": 0.7467,
-        "count": 3
+        "avg": 0.7651,
+        "count": 4
       }
     }
   ]
