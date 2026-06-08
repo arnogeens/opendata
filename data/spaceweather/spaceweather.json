@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-06-08T16:00:02.958897Z",
-  "sep_pfu": 0.201,
-  "kp_index": 2.33,
+  "timestamp": "2026-06-08T18:32:02.221476Z",
+  "sep_pfu": 0.344,
+  "kp_index": 1.33,
   "forbush_pct": 0,
-  "sw_speed_kms": 488.8,
-  "sw_pressure_npa": 0.65,
+  "sw_speed_kms": 458.0,
+  "sw_pressure_npa": 0.23,
   "euv_sfu": 134.0,
-  "lyman_alpha_uwcm2": 0.7834,
+  "lyman_alpha_uwcm2": 0.7903,
   "history": [
     {
       "timestamp": "2026-04-12T09:38:28.018916Z",
@@ -2636,53 +2636,53 @@
     {
       "date": "2026-06-08",
       "sep_pfu": {
-        "current": 0.201,
-        "max": 0.277,
+        "current": 0.344,
+        "max": 0.344,
         "min": 0,
-        "avg": 0.177,
-        "count": 4
+        "avg": 0.21,
+        "count": 5
       },
       "kp_index": {
-        "current": 2.33,
+        "current": 1.33,
         "max": 2.67,
-        "min": 2.0,
-        "avg": 2.25,
-        "count": 4
+        "min": 1.33,
+        "avg": 2.07,
+        "count": 5
       },
       "forbush_pct": {
         "current": 0,
         "max": 0,
         "min": 0,
         "avg": 0.0,
-        "count": 4
+        "count": 5
       },
       "sw_speed_kms": {
-        "current": 488.8,
+        "current": 458.0,
         "max": 518.9,
-        "min": 484.7,
-        "avg": 500.9,
-        "count": 4
+        "min": 458.0,
+        "avg": 492.3,
+        "count": 5
       },
       "sw_pressure_npa": {
-        "current": 0.65,
+        "current": 0.23,
         "max": 0.65,
-        "min": 0.24,
-        "avg": 0.48,
-        "count": 4
+        "min": 0.23,
+        "avg": 0.43,
+        "count": 5
       },
       "euv_sfu": {
         "current": 134.0,
         "max": 134.0,
         "min": 134.0,
         "avg": 134.0,
-        "count": 4
+        "count": 5
       },
       "lyman_alpha_uwcm2": {
-        "current": 0.7834,
-        "max": 0.7834,
+        "current": 0.7903,
+        "max": 0.7903,
         "min": 0.7834,
-        "avg": 0.7834,
-        "count": 4
+        "avg": 0.7848,
+        "count": 5
       }
     }
   ]
