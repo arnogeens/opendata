@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-06-29T04:18:38.673585Z",
-  "sep_pfu": 0.225,
-  "kp_index": 1.0,
+  "timestamp": "2026-06-29T09:50:16.045623Z",
+  "sep_pfu": 0.189,
+  "kp_index": 0.33,
   "forbush_pct": 0,
-  "sw_speed_kms": 426.5,
-  "sw_pressure_npa": 1.04,
+  "sw_speed_kms": 426.3,
+  "sw_pressure_npa": 0.57,
   "euv_sfu": 186.0,
-  "lyman_alpha_uwcm2": 0.8441,
+  "lyman_alpha_uwcm2": 0.8697,
   "history": [
     {
       "timestamp": "2026-04-12T09:38:28.018916Z",
@@ -3728,53 +3728,53 @@
     {
       "date": "2026-06-29",
       "sep_pfu": {
-        "current": 0.225,
+        "current": 0.189,
         "max": 0.225,
-        "min": 0.225,
-        "avg": 0.225,
-        "count": 1
+        "min": 0.189,
+        "avg": 0.207,
+        "count": 2
       },
       "kp_index": {
-        "current": 1.0,
+        "current": 0.33,
         "max": 1.0,
-        "min": 1.0,
-        "avg": 1.0,
-        "count": 1
+        "min": 0.33,
+        "avg": 0.67,
+        "count": 2
       },
       "forbush_pct": {
         "current": 0,
         "max": 0,
         "min": 0,
-        "avg": 0,
-        "count": 1
+        "avg": 0.0,
+        "count": 2
       },
       "sw_speed_kms": {
-        "current": 426.5,
+        "current": 426.3,
         "max": 426.5,
-        "min": 426.5,
-        "avg": 426.5,
-        "count": 1
+        "min": 426.3,
+        "avg": 426.4,
+        "count": 2
       },
       "sw_pressure_npa": {
-        "current": 1.04,
+        "current": 0.57,
         "max": 1.04,
-        "min": 1.04,
-        "avg": 1.04,
-        "count": 1
+        "min": 0.57,
+        "avg": 0.8,
+        "count": 2
       },
       "euv_sfu": {
         "current": 186.0,
         "max": 186.0,
         "min": 186.0,
         "avg": 186.0,
-        "count": 1
+        "count": 2
       },
       "lyman_alpha_uwcm2": {
-        "current": 0.8441,
-        "max": 0.8441,
+        "current": 0.8697,
+        "max": 0.8697,
         "min": 0.8441,
-        "avg": 0.8441,
-        "count": 1
+        "avg": 0.8569,
+        "count": 2
       }
     }
   ]
