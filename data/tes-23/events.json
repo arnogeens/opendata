@@ -1,0 +1,13 @@
+[
+  {
+    "timestamp": "2026-07-04T09:22:44.628610Z",
+    "date": "2026-07-04",
+    "event_type": "STORM",
+    "event_label": "STORM_2026-07-04_Kp7",
+    "sep_pfu_max": 1.576,
+    "kp_index_max": 7.33,
+    "forbush_pct_min": 0,
+    "seed": 1783156964,
+    "filename": "STORM_2026-07-04_Kp7"
+  }
+]

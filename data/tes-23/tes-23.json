@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-07-04T01:04:57.606563Z",
-  "date": "2026-07-03",
-  "sep_pfu": 0.25,
-  "kp_index": 2.11,
-  "forbush_pct": 0.0,
-  "triggered": false,
-  "event_type": null,
-  "event_label": null,
-  "seed": 1783127097,
+  "timestamp": "2026-07-04T09:22:44.628610Z",
+  "date": "2026-07-04",
+  "sep_pfu": 1.576,
+  "kp_index": 7.33,
+  "forbush_pct": 0,
+  "triggered": true,
+  "event_type": "STORM",
+  "event_label": "STORM_2026-07-04_Kp7",
+  "seed": 1783156964,
   "history": [
     {
       "timestamp": "2026-04-12T09:50:51.584131Z",
@@ -1073,6 +1073,17 @@
       "event_type": null,
       "event_label": null,
       "seed": 1783127097
+    },
+    {
+      "timestamp": "2026-07-04T09:22:44.628610Z",
+      "date": "2026-07-04",
+      "sep_pfu": 1.576,
+      "kp_index": 7.33,
+      "forbush_pct": 0,
+      "triggered": true,
+      "event_type": "STORM",
+      "event_label": "STORM_2026-07-04_Kp7",
+      "seed": 1783156964
     }
   ]
 }
