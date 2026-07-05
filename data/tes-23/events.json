@@ -9,5 +9,16 @@
     "forbush_pct_min": 0,
     "seed": 1783156964,
     "filename": "STORM_2026-07-04_Kp7"
+  },
+  {
+    "timestamp": "2026-07-05T01:12:23.481493Z",
+    "date": "2026-07-04",
+    "event_type": "FORBUSH",
+    "event_label": "FORBUSH_2026-07-04_5.4%",
+    "sep_pfu_max": 1.576,
+    "kp_index_max": 7.33,
+    "forbush_pct_min": -5.38,
+    "seed": 1783213943,
+    "filename": "FORBUSH_2026-07-04_5.4%"
   }
 ]
