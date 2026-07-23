@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-07-22T00:13:55.814625Z",
-  "date": "2026-07-21",
-  "sep_pfu": 0.211,
-  "kp_index": 2.87,
-  "forbush_pct": 0.0,
+  "timestamp": "2026-07-23T00:57:47.075342Z",
+  "date": "2026-07-23",
+  "sep_pfu": 0.223,
+  "kp_index": 2.67,
+  "forbush_pct": 0,
   "triggered": false,
   "event_type": null,
   "event_label": null,
-  "seed": 1784679235,
+  "seed": 1784768267,
   "history": [
     {
       "timestamp": "2026-04-12T09:50:51.584131Z",
@@ -1282,6 +1282,17 @@
       "event_type": null,
       "event_label": null,
       "seed": 1784679235
+    },
+    {
+      "timestamp": "2026-07-23T00:57:47.075342Z",
+      "date": "2026-07-23",
+      "sep_pfu": 0.223,
+      "kp_index": 2.67,
+      "forbush_pct": 0,
+      "triggered": false,
+      "event_type": null,
+      "event_label": null,
+      "seed": 1784768267
     }
   ]
 }
