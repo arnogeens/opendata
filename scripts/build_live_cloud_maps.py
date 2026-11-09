@@ -48,6 +48,11 @@ LAYERS = {
     "dust": "mumi:wideareacoverage_rgb_dust",
     "visible": "mumi:wideareacoverage_rgb_natural",
 }
+# The server encodes full PNGs slowly. The IR layer is grey, so 8-bit PNG is
+# effectively lossless for it (0.0002% px differ, by <= 4) and much faster;
+# the colour layers need full PNG (8-bit or JPEG breaks the recipe's colour tests).
+FORMATS = {"ir": "image/png8", "dust": "image/png", "visible": "image/png"}
+WORKERS = 12
 USER_AGENT = "spacesimulator-cloud-pipeline/1.0"
 STAGE_ID = f"{WIDTH}x{HEIGHT}"
 
@@ -88,19 +93,19 @@ def common_time() -> datetime:
     return min(latest_time(layer) for layer in LAYERS.values())
 
 
-def fetch_tile(layer: str, when: datetime, row: int, col: int) -> np.ndarray:
+def fetch_tile(layer: str, fmt: str, when: datetime, row: int, col: int) -> np.ndarray:
     lat0 = 90 - (row + 1) * TILE_DEG
     lon0 = -180 + col * TILE_DEG
     # WMS 1.3.0 with EPSG:4326 takes the bbox as lat,lon.
     bbox = f"{lat0},{lon0},{lat0 + TILE_DEG},{lon0 + TILE_DEG}"
     url = (f"{WMS}?service=WMS&request=GetMap&version=1.3.0&layers={layer}&styles="
-           f"&format=image/png&crs=EPSG:4326&bbox={bbox}&width={TILE_PX}&height={TILE_PX}"
+           f"&format={fmt}&crs=EPSG:4326&bbox={bbox}&width={TILE_PX}&height={TILE_PX}"
            f"&time={when.strftime('%Y-%m-%dT%H:%M:%S.000Z')}")
     last_err: Exception | None = None
-    for attempt in range(4):
+    for attempt in range(3):
         t0 = time.time()
         try:
-            data = http_get(url, 150)
+            data = http_get(url, 300)
             with Image.open(io.BytesIO(data)) as im:
                 im.load()  # fails on a truncated PNG
                 if im.size != (TILE_PX, TILE_PX):
@@ -114,12 +119,16 @@ def fetch_tile(layer: str, when: datetime, row: int, col: int) -> np.ndarray:
     raise RuntimeError(f"tile {layer} r{row} c{col} failed: {last_err}")
 
 
-def fetch_layer(layer: str, when: datetime, pool: ThreadPoolExecutor) -> np.ndarray:
+def fetch_layers(when: datetime) -> dict[str, np.ndarray]:
+    """All tiles of all layers at once, slowest layer (dust) first."""
     rows, cols = 180 // TILE_DEG, 360 // TILE_DEG
-    jobs = {(r, c): pool.submit(fetch_tile, layer, when, r, c) for r in range(rows) for c in range(cols)}
-    out = np.empty((HEIGHT, WIDTH, 3), np.uint8)
-    for (r, c), job in jobs.items():
-        out[r * TILE_PX:(r + 1) * TILE_PX, c * TILE_PX:(c + 1) * TILE_PX] = job.result()
+    order = ["dust", "visible", "ir"]
+    with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+        jobs = {(k, r, c): pool.submit(fetch_tile, LAYERS[k], FORMATS[k], when, r, c)
+                for k in order for r in range(rows) for c in range(cols)}
+        out = {k: np.empty((HEIGHT, WIDTH, 3), np.uint8) for k in order}
+        for (k, r, c), job in jobs.items():
+            out[k][r * TILE_PX:(r + 1) * TILE_PX, c * TILE_PX:(c + 1) * TILE_PX] = job.result()
     return out
 
 
@@ -292,8 +301,9 @@ def main() -> None:
             set_output("changed", "false")
             return
         print(f"building cloud map for {stamp}")
-        with ThreadPoolExecutor(max_workers=6) as pool:
-            layers = {k: fetch_layer(layer, when, pool) for k, layer in LAYERS.items()}
+        t0 = time.time()
+        layers = fetch_layers(when)
+        print(f"downloaded {len(LAYERS) * 8} tiles in {time.time() - t0:.0f} s", flush=True)
         if args.save_sources:
             for k, a in layers.items():
                 Image.fromarray(a).save(out_dir / f"{k}.png")
