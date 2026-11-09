@@ -25,7 +25,7 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       # Only the script; never the (large) data tree.
       - name: Fetch the build script
@@ -44,7 +44,7 @@ jobs:
       - name: Build cloud map
         id: build
         run: |
-          python scripts/build_live_cloud_maps.py \
+          python -u scripts/build_live_cloud_maps.py \
             --output-dir out \
             --static-base "$RAW/main/data/earth-textures/static" \
             --previous-manifest "$RAW/live-clouds/latest.json"

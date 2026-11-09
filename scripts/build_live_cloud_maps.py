@@ -97,15 +97,18 @@ def fetch_tile(layer: str, when: datetime, row: int, col: int) -> np.ndarray:
            f"&format=image/png&crs=EPSG:4326&bbox={bbox}&width={TILE_PX}&height={TILE_PX}"
            f"&time={when.strftime('%Y-%m-%dT%H:%M:%S.000Z')}")
     last_err: Exception | None = None
-    for attempt in range(5):
+    for attempt in range(4):
+        t0 = time.time()
         try:
-            data = http_get(url, 240)
+            data = http_get(url, 150)
             with Image.open(io.BytesIO(data)) as im:
                 im.load()  # fails on a truncated PNG
                 if im.size != (TILE_PX, TILE_PX):
                     raise RuntimeError(f"unexpected size {im.size}")
+                print(f"  {layer} r{row} c{col}: {len(data) / 1e6:.1f} MB in {time.time() - t0:.0f} s", flush=True)
                 return np.asarray(im.convert("RGB"))
         except Exception as err:  # noqa: BLE001 - retry anything
+            print(f"  {layer} r{row} c{col}: attempt {attempt + 1} failed after {time.time() - t0:.0f} s: {err}", flush=True)
             last_err = err
             time.sleep(5 * (attempt + 1))
     raise RuntimeError(f"tile {layer} r{row} c{col} failed: {last_err}")
@@ -281,6 +284,7 @@ def main() -> None:
         layers = {k: np.asarray(Image.open(src / f"{k}.png").convert("RGB")) for k in LAYERS}
         when = datetime.fromisoformat(args.time.replace("Z", "+00:00")) if args.time else datetime.now(timezone.utc)
     else:
+        print("checking EUMETSAT for the newest time step", flush=True)
         when = datetime.fromisoformat(args.time.replace("Z", "+00:00")) if args.time else common_time()
         stamp = when.strftime("%Y-%m-%dT%H:%M:%SZ")
         if previous_source_time(args.previous_manifest) == stamp:
