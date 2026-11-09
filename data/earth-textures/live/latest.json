@@ -1,41 +1,13 @@
 {
-  "generatedAt": "2026-11-05T11:00:05+00:00",
-  "snapshotDate": "2026-11-05",
+  "note": "Fixed pointer for older clients. The live manifest (with sourceTime) is on the live-clouds branch: https://raw.githubusercontent.com/arnogeens/opendata/live-clouds/latest.json",
+  "attribution": "Contains modified EUMETSAT data",
   "stages": [
     {
-      "id": "512x256",
-      "day": "./512x256/earth.webp",
-      "cloudAlpha": "./512x256/clouds.webp",
-      "night": "./512x256/earth-night.webp",
-      "specular": "./512x256/specular.webp"
-    },
-    {
-      "id": "1024x512",
-      "day": "./1024x512/earth.webp",
-      "cloudAlpha": "./1024x512/clouds.webp",
-      "night": "./1024x512/earth-night.webp",
-      "specular": "./1024x512/specular.webp"
-    },
-    {
-      "id": "2048x1024",
-      "day": "./2048x1024/earth.webp",
-      "cloudAlpha": "./2048x1024/clouds.webp",
-      "night": "./2048x1024/earth-night.webp",
-      "specular": "./2048x1024/specular.webp"
-    },
-    {
-      "id": "4096x2048",
-      "day": "./4096x2048/earth.webp",
-      "cloudAlpha": "./4096x2048/clouds.webp",
-      "night": "./4096x2048/earth-night.webp",
-      "specular": "./4096x2048/specular.webp"
-    },
-    {
       "id": "8192x4096",
-      "day": "./8192x4096/earth.webp",
-      "cloudAlpha": "./8192x4096/clouds.webp",
-      "night": "./8192x4096/earth-night.webp",
-      "specular": "./8192x4096/specular.webp"
+      "day": "https://raw.githubusercontent.com/arnogeens/opendata/main/data/earth-textures/static/earth.webp",
+      "cloudAlpha": "https://raw.githubusercontent.com/arnogeens/opendata/live-clouds/clouds.webp",
+      "night": "https://raw.githubusercontent.com/arnogeens/opendata/main/data/earth-textures/static/earth-night.webp",
+      "specular": "https://raw.githubusercontent.com/arnogeens/opendata/main/data/earth-textures/static/specular.webp"
     }
   ]
 }
