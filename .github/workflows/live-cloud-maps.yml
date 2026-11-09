@@ -3,14 +3,15 @@ name: Live cloud map
 # Builds the global cloud map from EUMETSAT's 3-hourly composites and
 # publishes it to the live-clouds branch, which always holds exactly one
 # commit (force-pushed), so old maps never pile up in git history.
-# EUMETSAT publishes a time step every 3 h (00, 03, ... UTC) about 40 min
-# after the slot (09:00 appeared at 09:36-09:40 on 2026-11-09). One run per
-# step plus one retry; a run with nothing new ends within seconds.
+# EUMETSAT publishes a time step every 3 h (00, 03, ... UTC). The IR layer
+# comes ~40 min after the slot, the colour layers ~1 h 35 min after it
+# (09:00 complete at 10:34-10:37 on 2026-11-09). One run per step plus one
+# retry; a run with nothing new ends within seconds.
 
 on:
   schedule:
-    - cron: "50 */3 * * *"      # slot + 0:50
-    - cron: "20 1-23/3 * * *"   # retry, slot + 1:20
+    - cron: "45 1-23/3 * * *"   # slot + 1:45
+    - cron: "30 2-23/3 * * *"   # retry, slot + 2:30
   workflow_dispatch:
 
 permissions:
