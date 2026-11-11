@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-11-11T21:33:26+00:00",
+  "sourceTime": "2026-11-11T18:00:00Z",
+  "snapshotDate": "2026-11-11",
+  "attribution": "Contains modified EUMETSAT data",
+  "stages": [
+    {
+      "id": "8192x4096",
+      "day": "https://raw.githubusercontent.com/arnogeens/opendata/main/data/earth-textures/static/earth.webp",
+      "cloudAlpha": "./clouds.webp?v=2026-11-11T180000Z",
+      "night": "https://raw.githubusercontent.com/arnogeens/opendata/main/data/earth-textures/static/earth-night.webp",
+      "specular": "https://raw.githubusercontent.com/arnogeens/opendata/main/data/earth-textures/static/specular.webp"
+    }
+  ]
+}
